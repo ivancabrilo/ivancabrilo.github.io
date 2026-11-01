@@ -13,9 +13,8 @@ p { font-size: clamp(17px, 1.7vw, 20px); color: #5e6053; margin: 0; max-width: 3
 .hero-art img { display: block; width: 100%; height: auto; border-radius: 16px; box-shadow: 0 14px 40px #6d49241c; }
 .menu a.linkedin-link { background: #245966; color: #fff9ed; border-color: #245966; gap: 8px; }
 .site-footer { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-top: 20px; padding-bottom: max(24px, env(safe-area-inset-bottom)); border-top: 1px solid #86643e25; font-size: 12px; color: #6e6757; }
-.site-footer a { display: inline-flex; align-items: center; min-height: 44px; padding: 10px 12px; }
 @media (max-width: 700px) { .landing { grid-template-columns: minmax(0, 1fr); padding-block: 38px 40px; gap: 32px; } .hero-art { justify-self: center; max-width: 420px; } .intro { max-width: 100%; } h1 { margin-bottom: 20px; } }
 @media (max-width: 440px) { .container { padding-inline: max(18px, env(safe-area-inset-left)) max(18px, env(safe-area-inset-right)); } }
 
 .site-header.container { justify-content: flex-end; }
-.hero-art figcaption { margin-top: 12px; font-size: 11px; color: #6e6757; letter-spacing: .02em; font-weight: 400; text-align: center; }
+.hero-art figcaption { margin-top: 12px; font-size: 12px; color: #6e6757; letter-spacing: .02em; font-weight: 400; text-align: center; }
