@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta name="theme-color" content="#f7ecd9">
+  <title>Game · Ivan Cabrilo</title>
+  <link rel="stylesheet" href="game.css?v=4435b1884560">
+  <link rel="stylesheet" href="nav.css?v=94b8412ff9cd">
+  <script src="game-core.js?v=5adc0a1bb04b" defer></script>
+  <script src="game.js?v=a052387038ff" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#gameCanvas">Skip to game</a>
+  <header class="topbar">
+    <span class="game-motto"><strong>- Sky is the limit</strong> </span>
+    <nav class="menu" aria-label="Main navigation"><ul><li><a href="index.html">Home</a></li><li><a href="game.html" aria-current="page">Game</a></li></ul></nav>
+  </header>
+  <main id="arena" aria-label="Platform jumping game">
+    <canvas id="gameCanvas" tabindex="0" aria-label="Jump between platforms using A and D or arrow keys to move, and W, up arrow or Space to jump. Touch controls are below."></canvas>
+    <div class="hud"><div><small>PLATFORMS</small><strong id="score">00</strong></div><div class="best"><small>BEST</small><strong id="best">00</strong></div></div>
+    <div class="utilities"><button id="pauseButton" aria-label="Pause game">Pause</button><button id="restartButton" aria-label="Restart game">↻</button></div>
+    <section id="instructions" class="overlay" aria-labelledby="panelTitle">
+      <div class="card"><h1 id="panelTitle">Ready to jump?</h1><div id="controlHint"><p class="keyboardHint">Press <kbd>A</kbd> <kbd>D</kbd> to move or <kbd>W</kbd> to jump</p><p class="touchHint">Hold an arrow. Tap Jump.</p></div><p id="panelText">Two jumps. A surprise second boost.</p><button id="closeInstructions" class="primary">Play ↑</button></div>
+    </section>
+    <p id="announcement" class="sr-only" role="status" aria-live="polite"></p>
+  </main>
+  <footer class="bottom"><span class="desktopHint">A / D to move <i>·</i> W / Space to jump <i>·</i> Esc to pause</span><div class="touch-controls" aria-label="Game controls"><div class="directions"><button data-action="left" aria-label="Move left">←</button><button data-action="right" aria-label="Move right">→</button></div><button data-action="jump" class="jump">Jump <span aria-hidden="true">↑</span></button></div></footer>
+</body>
+</html>

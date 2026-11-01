@@ -3,7 +3,7 @@ const { readFileSync, writeFileSync } = require('node:fs');
 const { resolve } = require('node:path');
 const { createHash } = require('node:crypto');
 const root = resolve(__dirname, '..');
-for (const page of ['index.html', 'personal.html']) {
+for (const page of ['index.html', 'game.html']) {
   const file = resolve(root, page);
   const html = readFileSync(file, 'utf8');
   const versioned = html.replace(/(href|src)="([^"?:]+\.(?:css|js))(?:\?[^"\s]*)?"/g, (_, attribute, asset) => {
